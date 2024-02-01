@@ -120,14 +120,23 @@ h2{
     font-style: normal;
 }
 p{
+    font-size:150%;
     margin:100px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-wrap: wrap;
 }
 a{
     font-style:italic;
     font-family: "Kanit", sans-serif;
     font-weight: 200;
     font-style: normal;
+    word-break: break-all;
+}
+.center{
+    text-align:center;
+}
+.margin0{
+    margin:0 !important;
 }
