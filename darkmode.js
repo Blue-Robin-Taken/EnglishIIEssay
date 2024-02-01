@@ -18,6 +18,7 @@ window.onload = function(){ // https://stackoverflow.com/questions/9778888/uncau
     function switchDarkOrLight() {
     darkmode = !darkmode
     
+
     hOnes = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a");
     if (darkmode){
         document.body.style.backgroundColor="black";
