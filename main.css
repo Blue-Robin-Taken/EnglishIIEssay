@@ -121,6 +121,7 @@ h2{
     font-size: 3.2vw;
 }
 p{
+    line-height:5;
     font-size:150%;
     margin:100px;
     font-size: 1.2vw;
@@ -142,9 +143,6 @@ a{
 .margin0{
     margin:0 !important;
 }
-.fixed{
-    position: fixed;
-}
 .darkmodebutton{  /*https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button*/
     background-color: transparent;
     background-repeat: no-repeat;
@@ -152,8 +150,10 @@ a{
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    bottom: 30px;
-    right: 30px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    z-index: 1000;
 }
 
 .scale-in-hor-center{-webkit-animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94);animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94)}
