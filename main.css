@@ -1,22 +1,3 @@
-/* Navbar */
-ul.navbar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li.navbar {
-  float: left;
-}
-
-li.navbar a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
 /* Change the link color to #111 (black) on hover */
 li.navbar a:hover {
   background-color: #111;
@@ -234,6 +215,8 @@ body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    padding:0;
+    margin:0;
 }
 
 @keyframes fadeInAnimation {
@@ -243,4 +226,33 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.navbar {
+    float: left;
+    margin:5px;
+    padding:0;
+}
+
+li.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin:0;
+  padding:0;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.navbar a:hover {
+  background-color: #111;
 }

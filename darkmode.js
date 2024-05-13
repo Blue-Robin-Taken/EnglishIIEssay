@@ -47,7 +47,7 @@ window.onload = function(){ // https://stackoverflow.com/questions/9778888/uncau
             document.cookie = "darkmode=false";
         }
 
-        hOnes = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, li");
+        hOnes = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, li, ul");
         if (getCookie('darkmode')=='true'){
             document.body.style.backgroundColor="black";
             hOnes.forEach(changeToDark);
