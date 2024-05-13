@@ -248,8 +248,7 @@ li.navbar a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  margin:0;
-  padding:0;
+  font-size:30px;
 }
 
 /* Change the link color to #111 (black) on hover */
