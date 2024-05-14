@@ -17,14 +17,15 @@ function darkToLight(e, index, num){
     e.style.color="";
 }
 
+
 function scrollToTop(){
-    window.scrollTo(0, 0);
+    
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 window.onload = function(){ // https://stackoverflow.com/questions/9778888/uncaught-typeerror-cannot-set-property-onclick-of-null
-
     var docelm = document.getElementById('bigdiv');
-    docelm.addEventListener("animationend", scrollToTop(), {}, false);
+    //docelm.addEventListener("animationend", scrollToTop(), {}, false);
     var darkmodeImage = document.getElementById("darkmodeimage");
 
     if (getCookie('darkmode')==null){
