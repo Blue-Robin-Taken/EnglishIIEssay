@@ -1,5 +1,9 @@
 var darkmode = false;
 
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
 function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
@@ -18,12 +22,22 @@ function darkToLight(e, index, num){
 }
 
 
-function scrollToTop(){
-    
+function scrollToTop(){    
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+function scrollToLast(){
+    var scroll = getCookie('scroll');
+    window.scrollTo(0, parseInt(scroll));
+}
+
 window.onload = function(){ // https://stackoverflow.com/questions/9778888/uncaught-typeerror-cannot-set-property-onclick-of-null
+    if ('scrollRestoration' in history) {
+	history.scrollRestoration = 'manual';
+    }
+    addEventListener("scroll", (event) => {
+	document.cookie = `scroll=${window.scrollY}`
+    });
     var docelm = document.getElementById('bigdiv');
     //docelm.addEventListener("animationend", scrollToTop(), {}, false);
     var darkmodeImage = document.getElementById("darkmodeimage");
@@ -60,4 +74,6 @@ window.onload = function(){ // https://stackoverflow.com/questions/9778888/uncau
             darkmodeImage.src='static/images/MOON.png';
         }
     }
+    scrollToLast();
+    
 }
