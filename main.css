@@ -131,7 +131,14 @@ h3{
     font-family: "Kanit", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
+}
+h4{
+    text-align: center;
+    folt-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size:1.2;
 }
 li{
     font-size:150%;
